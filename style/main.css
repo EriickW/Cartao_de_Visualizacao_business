@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root{
+    /* Primarias */
+    --darkBlue: hsl(233, 47%, 7%);
+    --bgCard: hsl(244, 38%, 16%);
+     --softViolet: hsl(277, 78%, 52%);
+    /* Neutral */
+
+   --heading: hsl(0, 0%, 100%);
+  --paragraph:hsla(0, 0%, 100%, 0.75);
+    --statHeadings: hsla(0, 0%, 100%, 0.6);
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    font-size: 15px;
+    background: var(--darkBlue);
+    width: 100%;
+    height: 100vh;
+}
+h1{
+    
+    font-family: "Inter";
+    color: var(--heading);
+}
+p{
+    
+    font-family: "Lexend Deca";
+    color: var(--paragraph);
+}
+.container{
+    position: absolute;
+    width: 100%;
+    height:625px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.foto{
+    width: 525px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    background-color: var(--softViolet);
+    overflow: hidden;
+    border-radius: 0px 10px 10px 0px;
+}
+.foto img{
+    position: relative;
+   margin-left:4px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 0px 10px 10px 0px;
+    z-index: 1;
+ opacity : 0.6; 
+}
+.box{
+    height: 400px;
+    width: 1050px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bgCard);
+    border-radius: 10px;
+}
+
+span{
+    color: var(--softViolet);
+}
+.text{
+    
+    width: 50%;
+    padding: 0px 80px;
+}
+.comeco h1{
+    margin-bottom: 30px;
+}
+.comeco p{
+    margin-bottom: 70px;
+    Font-size: 13px;
+    width: 320px;
+    line-height: 23px;
+}
+.numbers {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.numbers h1{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.numbers p{
+    Font-size: 12px;
+}
+@media (max-width: 700px) {
+    .container{
+        margin-top: 150px;
+         margin-top: 150px;
+        position: relative;
+        width:100%;
+        height: 770px;
+        flex-direction: column;
+    }
+    .box{
+        flex-direction: column;
+        height: 100%;
+        width: 350px;
+    }
+    .foto {
+        width: 350px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    transform: translateY(-500px);
+    border-radius: 10px 10px 0px 0px;
+    }
+    .foto img{
+        width: 403px;
+        height: 300px;
+        
+    }
+    .text{
+       
+        width: 300px;
+        height: 50%;
+        transform: translateY(370px);
+        display: flex;
+        text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    }
+    .numbers {
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .numbers p {
+        margin-bottom: 30px;
+       
+    }
+    .comeco h1{
+        padding: 0px 20px;
+    }
+    .comeco p{
+        padding: 0px 40px;
+        margin-bottom: 40px;
+        Font-size: 13px;
+        width: 320px;
+        line-height: 23px;
+    }
+}
